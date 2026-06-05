@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Fri, Jun 05, 2026 03:05:02 PM
+//Last modified: Fri, Jun 05, 2026 03:10:14 PM
 //Codeset: 1251
 file -rdi 1 -ns "Scene_cup" -rfn "Scene_cupRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene cup.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/MAx/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Referencing models/Table.ma";
@@ -26,21 +26,21 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "040F5130-4F6E-4AEE-147E-B19F13D011C0";
+fileInfo "UUID" "37378472-4B1E-5A9C-8B91-398EE4CFE5BC";
 createNode transform -s -n "persp";
 	rename -uid "AE7EC14B-47A7-3098-AA9B-F6B98BA334E4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.4396674549557891 6.2037554850277576 -2.5419349613218563 ;
-	setAttr ".r" -type "double3" -23.738352872543775 8322.999999984213 -2.1744298781866724e-15 ;
+	setAttr ".t" -type "double3" 2.4983717385241464 8.3429528269387845 0.14742531731378317 ;
+	setAttr ".r" -type "double3" -25.538352873842051 8333.7999999830645 5.3852423953131717e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F81C6345-4CA0-6F84-8132-04896995B2CC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3.2518153896375792;
+	setAttr ".coi" 17.165315663803156;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.28464221954345703 6.6799526214599609 0 ;
+	setAttr ".tp" -type "double3" -10 0.94272473668135359 -9 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "0D9C7522-4AD3-ADFB-E294-4CA75CC5D510";
