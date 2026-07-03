@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Cup.ma
-//Last modified: Thu, Jul 02, 2026 06:12:58 PM
+//Last modified: Thu, Jul 02, 2026 07:03:22 PM
 //Codeset: 1251
 file -rdi 1 -ns "Scene_cup" -rfn "Scene_cupRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene cup.ma";
 file -r -ns "Scene_cup" -dr 1 -rfn "Scene_cupRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Scene cup.ma";
@@ -12,17 +12,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "B49AE939-422A-323D-F850-449302572D01";
+fileInfo "UUID" "48CFE5AB-4B1A-0400-6387-10B7C34D8F25";
 createNode transform -s -n "persp";
 	rename -uid "B62A9E74-4600-6F0E-ABB7-C79C67C5FA82";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.2099772515686418 5.6576191026030447 4.6419326536582144 ;
-	setAttr ".r" -type "double3" 336.86164727320954 13534.20000000286 0 ;
+	setAttr ".t" -type "double3" 8.1245751287077059 6.5357415093806939 7.6581019275089517 ;
+	setAttr ".r" -type "double3" 309.26164727317001 13349.800000002493 1.8326119513025565e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CD194D35-4009-DC3B-3CD1-0AB36C9739D4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2.3029017935344491;
+	setAttr ".coi" 2.3029017935344354;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -79,7 +79,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode fosterParent -n "Scene_cupRNfosterParent1";
-	rename -uid "85FCFBAE-4551-B954-F4CD-72991B870922";
+	rename -uid "EDB7A64E-4890-E915-91EE-16BB16B98DC7";
 createNode mesh -n "Scene_cup:polySurfaceShape1" -p "Scene_cupRNfosterParent1";
 	rename -uid "C1883B19-4E1A-44E4-C09E-758AAFEBB9C2";
 	setAttr -k off ".v";
