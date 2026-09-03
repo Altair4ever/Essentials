@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Bounce ball.ma
-//Last modified: Tue, Sep 01, 2026 04:01:56 AM
+//Last modified: Tue, Sep 01, 2026 06:00:40 AM
 //Codeset: 1251
 requires maya "2027";
 requires "mtoa" "5.6.1.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "773FC623-403C-F2A1-F34E-DD8CD79B7B37";
+fileInfo "UUID" "2CD9748C-4F95-7AB0-5B32-B18606FBFF85";
 createNode transform -s -n "persp";
 	rename -uid "E72A5726-499A-62EA-BA36-9F874DB70AEA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 43.264140363615702 2.9730357873631599 2.2673773833262483 ;
-	setAttr ".r" -type "double3" -2.1383527295181435 446.99999999988165 0 ;
+	setAttr ".t" -type "double3" 42.743870845503082 -0.20424446980431732 -7.0762020879164123 ;
+	setAttr ".r" -type "double3" 2.061647270484062 459.39999999988055 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5A66EC91-431C-B222-57D0-2D8D10408A7F";
 	setAttr -k off ".v" no;
@@ -269,8 +269,8 @@ createNode animCurveTA -n "pSphere1_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  21 0 22 0;
 select -ne :time1;
-	setAttr ".o" 12;
-	setAttr ".unw" 12;
+	setAttr ".o" 17;
+	setAttr ".unw" 17;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
